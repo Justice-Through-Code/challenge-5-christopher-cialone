@@ -25,6 +25,15 @@ def favorite_activities():
     # AFTER your loop, print out the list to check if it got populated correctly.
 
     print(favorite_thing)
+    fav_activities = []
+    # We should keep track of the user's favorite things to do so that we can print them out all together.
+    # 2.2 TODO: ABOVE your for loop, create a new empty list to hold the user's favorite activities.
+    for day in days:
+        activity = input(f"What is your favorite thing do to on {day}s?")
+        fav_activities.append(activity)
+    # 2.3 TODO: Now, back in your for loop, append each of the user's answers into your new list.
+    # AFTER your loop, print out the list to check if it got populated correctly.
+    print(fav_activities)
     # 2.4: After the code you've written so far, let's create a new for loop.
     # As an example, let's say the user's favorite thing to do on Mondays is plan their week.
     #  This time, we want the output to be something like this:
@@ -33,8 +42,13 @@ def favorite_activities():
     # of the items in the lists (this will work because the lists are the same length).
     # Each time through this new loop, use the index number to index into each of your lists for the data
     # you need to print out.
+<<<<<<< HEAD
     for i in range(len(favorite_thing)):
         print(f'On {days[i]}s, your favorite activity is to {favorite_thing[i]}.')
+=======
+    for i in range(len(days)):
+        print(f"On {days[i]}s, your favorite activity is to {fav_activities[i]}.")
+>>>>>>> refs/remotes/origin/main
 
 '''
     Take a look back at the code you just wrote. Look at how much it does!
