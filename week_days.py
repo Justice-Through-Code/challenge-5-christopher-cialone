@@ -1,4 +1,3 @@
-
 days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
 
@@ -15,16 +14,6 @@ def favorite_activities():
     # 2.1 TODO: Now, in a for loop, instead of just printing out the day,
     # let's ask the user what their favorite thing to do is on that day of the week.
     # NOTE: Make sure to use an f-string so that the user knows which day they're being asked about.
-    favorite_thing = []
-    for day in range(len(days)):   
-      user_favorite = input(f'What is your favorite thing to do on {days[day]}? ')
-      favorite_thing.append(user_favorite)  
-    # We should keep track of the user's favorite things to do so that we can print them out all together.
-    # 2.2 TODO: ABOVE your for loop, create a new empty list to hold the user's favorite activities.
-    # 2.3 TODO: Now, back in your for loop, append each of the user's answers into your new list.
-    # AFTER your loop, print out the list to check if it got populated correctly.
-
-    print(favorite_thing)
     fav_activities = []
     # We should keep track of the user's favorite things to do so that we can print them out all together.
     # 2.2 TODO: ABOVE your for loop, create a new empty list to hold the user's favorite activities.
@@ -42,13 +31,8 @@ def favorite_activities():
     # of the items in the lists (this will work because the lists are the same length).
     # Each time through this new loop, use the index number to index into each of your lists for the data
     # you need to print out.
-<<<<<<< HEAD
-    for i in range(len(favorite_thing)):
-        print(f'On {days[i]}s, your favorite activity is to {favorite_thing[i]}.')
-=======
     for i in range(len(days)):
         print(f"On {days[i]}s, your favorite activity is to {fav_activities[i]}.")
->>>>>>> refs/remotes/origin/main
 
 '''
     Take a look back at the code you just wrote. Look at how much it does!
@@ -63,7 +47,6 @@ def favorite_activities():
     Is it clear what needs to be done?
 
     Try to break down the steps required for this second loop challenge.
-
 '''
 
 
@@ -90,5 +73,6 @@ def temp_by_day_continuous():
     while temp < 65:
         print('Wear a sweater')
         temp = int(input("What is the temperature today?"))
+    print('Spring has sprung!')
     # NOTE: remember, if you accidentally create an infinite while loop, it's ok! Go into the command line and
     # hit control + C to stop the program. No harm done to your computer (:
