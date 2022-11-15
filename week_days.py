@@ -73,5 +73,6 @@ def temp_by_day_continuous():
     while temp < 65:
         print('Wear a sweater')
         temp = int(input("What is the temperature today?"))
+    print('Spring has sprung!')
     # NOTE: remember, if you accidentally create an infinite while loop, it's ok! Go into the command line and
     # hit control + C to stop the program. No harm done to your computer (:
